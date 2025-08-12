@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>P2P Platforms Playbook</title>
+    <title>HCP Engagement Playbook</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -69,7 +70,7 @@
                 <div className={`flex items-center gap-4 ${className}`}>
                     <img src="https://companieslogo.com/img/orig/VTRS-ea139526.png" alt="Viatris logo" className="w-[70px] h-auto" />
                     <div className="text-white">
-                        <div className="font-bold text-lg tracking-wider">DIGITAL</div>
+                        <div className="font-bold text-lg tracking-wider">EU DIGITAL</div>
                         <div className="text-sm tracking-widest">TRANSFORMATION</div>
                         <div className="text-xs tracking-wider">& INNOVATION</div>
                     </div>
@@ -296,6 +297,8 @@
             { name: 'Strategy', href: '#strategy' },
             { name: 'KPIs', href: '#kpis' },
             { name: 'Best Practices', href: '#dos-donts' },
+            { name: 'Local Platforms', href: '#local-platforms' },
+            { name: 'Next Steps', href: '#next-steps' },
         ];
 
         function Header() {
@@ -358,7 +361,7 @@
                         </h1>
 
                         <p className="text-xl md:text-2xl text-gray-300 font-light mb-12" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.7)' }}>
-                            Tom & Lena
+                            Lena & Tom
                         </p>
 
                         <div className="absolute bottom-[-10rem] left-1/2 -translate-x-1/2 w-[200%] max-w-[1200px] h-[300px] opacity-20">
@@ -401,6 +404,8 @@
             { text: "Integration with Brand Strategy", href: "#strategy", subItems: ["Aligning with marketing and medical goals", "Coordinating across functions (marketing, medical, compliance)"] },
             { text: "KPIs & Measurement", href: "#kpis", subItems: ["HCP reach, engagement, content consumption", "Qualitative feedback, impact on perception or intent"] },
             { text: "Do's & Don'ts = Best Practices", href: "#dos-donts", subItems: ["Ensure content credibility & compliance", "Avoid overlap with field force messages", "Prioritize value for HCPs"] },
+            { text: "Local Platforms", href: "#local-platforms", subItems: ["Discover local and semi-regional platforms across different markets"] },
+            { text: "Next Steps", href: "#next-steps", subItems: ["Actionable steps to start or enhance your P2P platform cooperation."] },
         ];
 
         function WhatIsInside() {
@@ -635,12 +640,73 @@
                             MedScape - Tail
                         </a>
                     </div>
+
+                    <div id="local-platforms" className="scroll-mt-24">
+                        <div className="text-center max-w-3xl mx-auto mt-20">
+                            <h3 className="text-2xl font-bold text-indigo-400 mb-4">Local Platforms</h3>
+                            <p className="text-lg text-gray-300 mb-8">
+                                Care to know about local & semi-regional platforms from different markets - check the list here&raquo;
+                            </p>
+                            <a
+                                href="https://myl.sharepoint.com/sites/EUDigitalTeamMaterials/_layouts/15/sharedialog.aspx?listId=3a0f613f-02f4-4338-a989-0a0269a6781d&clientId=sharePoint&sessionId=4901bba1-1043-7000-a00b-42c35f5d1cec&listItemId=2498&clickTime=1754995936630&sharingCorrelationId=a5f90777-a807-4f5b-a869-1b4cb80c42e9&mode=copy&ma=1&fullScreenMode=true&itemName=Local%20P2P%20Platforms%20V2.xlsx&channelId=9d7ceb23-dd9d-497a-b405-44c383470e70&origin=https%3A%2F%2Fmyl.sharepoint.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-block px-12 py-4 border border-transparent text-xl font-medium rounded-md shadow-sm text-white bg-teal-600 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 focus:ring-offset-gray-900 transition-transform transform hover:scale-105"
+                            >
+                                View the list of platforms
+                            </a>
+                        </div>
+                    </div>
+                    
                     <div className="max-w-4xl mx-auto mt-20 bg-gray-800/30 p-8 rounded-lg border border-gray-700/50">
                         <h3 className="text-2xl font-bold text-indigo-400 mb-6 text-center">Useful Links</h3>
                         <BulletList items={[
                             <span>If you want to view this information in traditional PowerPoint Slides - it's <a href="https://myl.sharepoint.com/:f:/s/EUDigitalTeamMaterials/EoLehC8SKWVAuhtSN2mWNHYBiqlpQAVc9UMui0MAvthcIw?e=8gTovy" target="_blank" rel="noopener noreferrer" className="font-semibold text-indigo-300 hover:text-indigo-200 transition-colors duration-200 underline decoration-1 underline-offset-4">here&raquo;</a></span>,
                             <span>View service presentation slides from MedScape, Sermo, TonicApp, Xpeer, Lecturio, InViVox, MedShr <a href="https://myl.sharepoint.com/:f:/s/EUDigitalTeamMaterials/Eq63mCMnt6FIsOyhSmgN9rcBoDJyaxvs5yNmQ1mVHuC_bA?e=hU8xKc" target="_blank" rel="noopener noreferrer" className="font-semibold text-indigo-300 hover:text-indigo-200 transition-colors duration-200 underline decoration-1 underline-offset-4">here&raquo;</a></span>,
                         ]} />
+                    </div>
+                </AnimatedSection>
+            );
+        }
+
+        function NextSteps() {
+            return (
+                <AnimatedSection id="next-steps">
+                    <SectionTitle>Next Steps</SectionTitle>
+                    <div className="max-w-4xl mx-auto bg-gray-800/30 p-8 rounded-lg border border-gray-700/50">
+                        <p className="text-xl text-gray-200 mb-6">
+                            Would you like to start/enhance your cooperation with P2P platforms? If YES:
+                        </p>
+                        <ol className="list-decimal list-inside space-y-6 text-lg text-gray-300">
+                            <li>
+                                Check out the platforms - which ones are most applicable to your business? 
+                                <a href="https://myl.sharepoint.com/:f:/s/EUDigitalTeamMaterials/Eq63mCMnt6FIsOyhSmgN9rcBoDJyaxvs5yNmQ1mVHuC_bA?e=hU8xKc" target="_blank" rel="noopener noreferrer" className="font-semibold text-indigo-300 hover:text-indigo-200 transition-colors duration-200 underline decoration-1 underline-offset-4 ml-2">
+                                    List of platforms&raquo;
+                                </a>
+                            </li>
+                            <li>
+                                Discuss internally with Marketing, Digital, Medical and SFE teams - what would be the strategy of platform utilization?
+                                <div className="mt-4 p-4 bg-cyan-900/50 border border-cyan-700 rounded-lg text-sm shadow-inner">
+                                    <h4 className="font-bold text-cyan-300 mb-2">CHECKLIST: Few points to consider Partnership with P2P Platform:</h4>
+                                    <ul className="list-disc list-inside space-y-2 text-gray-300">
+                                        <li>Desired Target Audience Coverage: Number of HCPs in your Market available on Platform</li>
+                                        <li>Does Viatris already have a MSA with provider?</li>
+                                        <li>Coverage of specific KOLs</li>
+                                        <li>Fit for purpose - is your case enabled by this provider?</li>
+                                        <li>Specific tools provided by platform that feed the goal of the project</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                Highlight your interest for the selected regional platforms by filling this 
+                                <a href="https://myl.sharepoint.com/sites/EUDigitalTeamMaterials/_layouts/15/sharedialog.aspx?clientId=Wac&scenarioId=WacExcel&listId=3a0f613f-02f4-4338-a989-0a0269a6781d&listItemId=2496&hostSessionId=6B00BBA1-C036-7000-A00B-4DE68BA3E0C8&itemName=Europe%20P2P%20Platform%20Interest.xlsx&correlationId=6B00BBA1-C036-7000-A00B-4DE68BA3E0C8.0&clickTime=1754995150277&mode=copy&mode=copy&ma=0&fullScreenMode=true&channelId=43b8bf81-c9a8-44b9-be22-ba96a36a36a9&origin=https%3A%2F%2Fmyl.sharepoint.com" target="_blank" rel="noopener noreferrer" className="font-semibold text-indigo-300 hover:text-indigo-200 transition-colors duration-200 underline decoration-1 underline-offset-4 ml-2">
+                                    FILE&raquo;
+                                </a>
+                            </li>
+                            <li>
+                                Connect with Tom and Lena to discuss the details of cooperation.
+                            </li>
+                        </ol>
                     </div>
                 </AnimatedSection>
             );
@@ -809,6 +875,7 @@
                     <KpisAndMeasurement />
                     <BestPractices />
                     <ExternalBestPractices />
+                    <NextSteps />
                   </div>
                 </main>
                 <Footer />
